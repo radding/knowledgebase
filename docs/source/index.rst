@@ -9,13 +9,9 @@ Welcome to the ACM KnowledgeBase!
 Contents:
 
 .. toctree::
-<<<<<<< HEAD
    makefiles/index
+   git/index
    :maxdepth: 1
-=======
-  git/index 
-  :maxdepth: 2
->>>>>>> 932d4160bff9ca2cadc4f8ec9462fb78773fba3f
 
 
 
