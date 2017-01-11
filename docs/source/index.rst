@@ -3,13 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ACM KnowledgeBase's documentation!
-=============================================
+Welcome to the ACM KnowledgeBase!
+=================================
 
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   makefiles/index
+   :maxdepth: 1
 
 
 
