@@ -9,7 +9,8 @@ Welcome to ACM KnowledgeBase's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+  git/index 
+  :maxdepth: 2
 
 
 
