@@ -20,5 +20,42 @@ does this might look something like this:
         commands to generate b.output from b.inputfile
 
 
-If you wanted to build ``a.output`` all you would need to do is run the command ``make a.output``
+If you wanted to build ``a.output`` all you would need to do is run the command ``make a.output``.
 
+Makefile Structure
+------------------
+
+Makefiles consist of definitions and rules. 
+
+A definition would look something like this:
+
+``VAR=value``
+
+When referencing a definition like ``VAR``, surround it with ``$(VAR)``.
+
+A rule would look something like this:
+
+.. code-block:: html
+    :linenos:
+
+    output files: input files
+        command to generate outputs from inputs
+
+The commands **must** be tab indented to work.
+
+
+Simple Example Makefile for C
+-----------------------------
+
+.. code-block:: html
+    :linenos:
+
+    CC=gcc
+
+    bar: bar.c foo.h foo.o
+        $(CC) -o bar bar.c foo.o
+
+    foo.o: foo.c foo.h
+        $(CC) -c foo.c
+
+To run this make file, one would simply run the command ``make bar``.
